@@ -54,7 +54,7 @@ st.subheader(''' Using this application the user can run Exploratory Data Analys
 
 st.write('---')
 st.header('Jena Climate Dataset Selection 👇:')
-file = st.radio("Choose Jena Climate Dataset",('Use the Default Dataset','Upload the Dataset'),label_visibility='collapsed')
+file = st.radio("Choose Jena Climate Dataset",('Upload the Dataset','Use the Default Dataset'),label_visibility='collapsed')
 if file == 'Upload the Dataset':
   uploaded_file = st.file_uploader(f"Select the Jena Climate Datset")
 else:
