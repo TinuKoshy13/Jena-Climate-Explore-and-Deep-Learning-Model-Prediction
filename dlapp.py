@@ -27,6 +27,11 @@ from streamlit_pandas_profiling import st_profile_report
 import plotly.express as px
 import streamlit as st
 import base64
+import pyautogui
+try:
+    st.success("Loading APP")
+except:
+   pyautogui.hotkey("ctrl","F5")
 
 def pd_prof(df):
   profile = ProfileReport(df_climate_hour, title="EDA Jena Climate Dataset")
